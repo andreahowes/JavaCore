@@ -1,38 +1,53 @@
 Answer the following questions:
 
 1.) Using the command line, how do you:
-    a. change directories?
-    b. list the contents of a folder?
-    c. print the path of the current directory?
-    d. move a file from one location to the another?
-    e. copy a file from one location to another?
-    f. create a file?
-    g. create a folder?
-    h. delete a file?
-    i. delete a folder?
-    j. print the contents of a file?
-    k. edit the contents of a file?
+    a. change directories? cd
+    b. list the contents of a folder? ls -al
+    c. print the path of the current directory? pwd
+    d. move a file from one location to the another? mv <filename> <sub-dir>/<filename>
+    e. copy a file from one location to another? cp <filename> <directory>
+    f. create a file? vim or touch
+    g. create a folder? mkdir
+    h. delete a file? rm
+    i. delete a folder? rm -R
+    j. print the contents of a file? cat
+    k. edit the contents of a file? vim
 
 2.) Why do we use git and Github?
+    For version control and so multiple developers can work on the same thing at the
+    same time and from different locations without breaking the code.
 
 3.) What is the general flow of git?
+git pull to get the current version of the code from github.
+git add to add something new to your staging area.
+git commit -m "comment" to commit changes.
+git push to push the commit through to github
 
 4.) What is the purpose of adding a remote to a local git repository?
+    So you can push to origin from the terminal.
 
 5.) How do you print a message to the console?
+    system.out.println();
 
 6.) Where does a program begin its execution?
+    At the main() method
+    public static void main
 
 7.) What is a code block and how do you create one?
+    A code block is a group of two or more statements. It is created using {}
 
 8.) What is the idea of variable scope?
+    Variables defined in a code block are not visible to any member outside of that code block.
 
 9.) What are semicolons used for?
+    They are used to terminate a statement.
 
 10.) What are lines of code indented? When should a line be indented?
+    You indent one level after each opening brace and move back out one level after each closing brace. This makes the code
+    easier to understand.
 
 11.) What does a .java file need to be complied to a .class file before running?
-
+    Java source code has to be compiled into byte-code by the compiler. The byte code in the .class file can then be used by the JVM.
 
 
 
