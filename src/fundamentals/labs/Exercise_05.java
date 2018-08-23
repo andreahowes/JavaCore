@@ -23,7 +23,9 @@ public class Exercise_05 {
         // assign input to variable as int
         int days = scanner.nextInt();
 
-        // write completed code here
+        int seconds = days * 86400;
+
+        System.out.println(days + " days is the same as " + seconds + " seconds!");
 
     }
 }
