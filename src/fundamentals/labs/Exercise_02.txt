@@ -1,6 +1,6 @@
-1) Complete git tutorial here: https://try.github.io/
+1) Complete git tutorial here: https://try.github.io/ - Done
 
-2) Create Github account if you have not already done so.
+2) Create Github account if you have not already done so.- Done
 
 3) Once complete practice the following on your own machine:
 
@@ -19,10 +19,32 @@ Initializing git folder
             iii. Commit file(s)
             iv.  Push file(s) to Github repository
 
+
+Andreas-MBP:documents andreahowes$ cd CodingNomads
+Andreas-MBP:CodingNomads andreahowes$ mkdir git_practice_2
+Andreas-MBP:CodingNomads andreahowes$ cd git_practice_2
+Andreas-MBP:git_practice_2 andreahowes$ git init
+Initialized empty Git repository in /Users/andreahowes/Documents/CodingNomads/git_practice_2/.git/
+Andreas-MBP:git_practice_2 andreahowes$ vim FileA.txt
+Andreas-MBP:git_practice_2 andreahowes$ git add FileA.txt
+Andreas-MBP:git_practice_2 andreahowes$ git add FileA.txt
+Andreas-MBP:git_practice_2 andreahowes$ git commit
+Andreas-MBP:git_practice_2 andreahowes$ git remote add origin https://github.com/ashcreek/git_practice_2.git
+Andreas-MBP:git_practice_2 andreahowes$ git push -u origin master
+Andreas-MBP:git_practice_2 andreahowes$ vim FileB.txt
+Andreas-MBP:git_practice_2 andreahowes$ git add FileB.txt
+Andreas-MBP:git_practice_2 andreahowes$ git commit FileB.txt
+Andreas-MBP:git_practice_2 andreahowes$ git push origin master
+
+
 Adding a remote
     1. Create new personal repository on Github named "online_java-labs".
     2. On local machine, add the new remote address (directions are provided on Github with new repo is created)
     3. Push local git repository to your Github using the new remote.
+
+Created: https://github.com/ashcreek/online_java_labs.git
+Andreas-MBP:online_java_labs andreahowes$ git remote add origin https://github.com/ashcreek/online_java_labs.git
+Andreas-MBP:labs andreahowes$ git push
 
 Cloning repository from Github
     1. Find a repository on Github
@@ -30,3 +52,12 @@ Cloning repository from Github
     3. Create new repository on Github
     4. Add new remote on local machine
     5. Push to new Github repository
+
+Chose freecodecamp
+Andreas-MBP:codingNomads andreahowes$ git clone https://github.com/freeCodeCamp/freeCodeCamp.git
+Andreas-MBP:codingNomads andreahowes$ cd FreeCodeCamp
+Andreas-MBP:FreeCodeCamp andreahowes$ git remote rm origin
+Andreas-MBP:FreeCodeCamp andreahowes$ git remote add origin https://github.com/ashcreek/ClonedFreeCodeCamp.git
+Andreas-MBP:FreeCodeCamp andreahowes$ git push -u origin master
+error: src refspec master does not match any.
+error: failed to push some refs to 'https://github.com/ashcreek/ClonedFreeCodeCamp.git'
