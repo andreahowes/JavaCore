@@ -16,7 +16,13 @@ public class Exercise_01 {
 
     public static void main(String[] args) {
 
-        // write code here
-
+        int A = 2;
+        double B = 1000.13454;
+        float C = 513;
+        char D = 'd';
+        System.out.println("int: " + A);
+        System.out.println("double: " + B);
+        System.out.println("float: " + C);
+        System.out.println("char: " + D);
     }
 }
