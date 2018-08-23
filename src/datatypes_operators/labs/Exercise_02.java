@@ -23,7 +23,15 @@ public class Exercise_02 {
 
     public static void main(String[] args) {
 
-        // write code here
+        int my_variable = 10;
+        double the_double = my_variable;
+        System.out.println(the_double);
+
+        double second_variable = 10.5;
+        int the_int = (int) second_variable;
+        System.out.println(the_int);
+
+
 
     }
 }
