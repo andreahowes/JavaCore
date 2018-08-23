@@ -18,7 +18,41 @@ Fundamentals Exercise 1: CLI
          b. Use $ cat print contents of file
          c. Use $ grep to search for a word inside file
 
-Example Output (pwd):
-    1. Cadens-MacBook-Pro:CodingNomads cadenmackenzie$ pwd
-       /Users/cadenmackenzie/Documents/CodingNomads
+Answers:
+
+    1. pwd
+       /Users/andreahowes/documents/codingnomads
+    2. Andreas-MBP:codingnomads andreahowes$ mkdir Terminal_testing
+       Andreas-MBP:codingnomads andreahowes$ ls -al
+       total 16
+       drwxr-xr-x   6 andreahowes  staff   192 Aug 22 18:10 .
+       drwx------+  7 andreahowes  staff   224 Aug 20 20:48 ..
+       -rw-r--r--@  1 andreahowes  staff  6148 Aug 22 07:25 .DS_Store
+       drwxr-xr-x   6 andreahowes  staff   192 Aug 22 07:34 HelloJava
+       drwxr-xr-x   2 andreahowes  staff    64 Aug 22 18:10 Terminal_testing
+       drwxr-xr-x  10 andreahowes  staff   320 Aug 22 05:22 online_java_labs
+
+    3. ndreas-MBP:codingnomads andreahowes$ cd Terminal_testing
+       Andreas-MBP:Terminal_testing andreahowes$ touch FileA.txt
+       Andreas-MBP:Terminal_testing andreahowes$ Touch FileB.txt
+       Andreas-MBP:Terminal_testing andreahowes$ touch FileC.txt
+       Andreas-MBP:Terminal_testing andreahowes$ ls
+       FileA.txt	FileB.txt	FileC.txt
+       Andreas-MBP:Terminal_testing andreahowes$ pwd
+       /Users/andreahowes/documents/codingnomads/Terminal_testing
+
+    5. Andreas-MBP:Terminal_testing andreahowes$ mkdir New_Folder
+
+    6. Andreas-MBP:Terminal_testing andreahowes$ cp FileA.txt New_Folder
+
+    7. Andreas-MBP:Terminal_testing andreahowes$ mv FileB.txt New_Folder
+
+    8. Andreas-MBP:Terminal_testing andreahowes$ rm FileC.txt
+       Andreas-MBP:Terminal_testing andreahowes$ rm -R New_Folder
+
+    9. Andreas-MBP:Terminal_testing andreahowes$ vim FileA.txt
+       Andreas-MBP:Terminal_testing andreahowes$ cat FileA.txt
+       This is the text inside FileA
+       Andreas-MBP:Terminal_testing andreahowes$ grep "text" FileA.txt
+       This is the text inside FileA
 
