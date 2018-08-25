@@ -33,7 +33,7 @@ Andreas-MBP:git_practice_2 andreahowes$ git remote add origin https://github.com
 Andreas-MBP:git_practice_2 andreahowes$ git push -u origin master
 Andreas-MBP:git_practice_2 andreahowes$ vim FileB.txt
 Andreas-MBP:git_practice_2 andreahowes$ git add FileB.txt
-Andreas-MBP:git_practice_2 andreahowes$ git commit FileB.txt
+Andreas-MBP:git_practice_2 andreahowes$ git commit
 Andreas-MBP:git_practice_2 andreahowes$ git push origin master
 
 
