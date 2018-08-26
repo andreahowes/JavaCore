@@ -1,17 +1,27 @@
 Answer the following questions:
 
 1.) What is the if statement used for?
+     It is used to determine whether or not a program should execute a sequence of code.
 
 2.) What is good real life application of a switch statement?
+    A good application would be the floors an elevator can visit- something with a finite number of options.
 
 3.) What is the difference between a while loop and a do-while loop?
+    The while loop evaluates an expression and then executes the code. The do-while loop evaluates the expression
+    at the bottom of the loop instead of the top, so the code is always executed at least once.
 
 4.) What is the difference between a for loop and an enhanced for loop?
+    The enhanced for loop is built for looping through collections and arrays. 
 
 5.) How do you create an infinite for loop?
+    for( ; ; ){}
 
 6.) What is the difference between the break statement and the continue statement?
+    The break statement is used to break out of a loop.
+    The continue statement skips the remaining code and iterates to the next iteration.
 
 7.) Is there a limit to how many loops you can nest?
+    No, all loops in Java can be nested within any other type of loop as many times as you want.
 
 8.) Is there a limit to how many conditional statements you can nest?
+        No, You can nest if statements as many times as you want.
