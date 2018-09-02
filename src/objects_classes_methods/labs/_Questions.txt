@@ -40,6 +40,7 @@ Answer the following questions:
 11.) What is an example of a time you would make an instance variable static? final?
     I would make an instance variable static if I decided I wanted the entire class to be able to refer to it instead of
     just a single object inside that class. I would use final when I don't want any method to be able to change its value.
+    An example of a final variable is pi in the Math class. 
 
 12.) When a method returns a value, what needs to be done with that value?
     It needs to be assigned to a variable (of the matching type).
@@ -68,7 +69,7 @@ public Vehicle(String make, String model){
 //I think this needs for me to have created the String make and String model in this class prior to this constructor
 
 17.) What is the "this" keyword used for?
-    "this" is used in constructors to show that the keyword in the constructor parameters is referring to the variable in that object.
+    "this" is used in constructors to show that the keyword in the constructor parameters is referring to the variable in that class.
 
 18.) What are the keywords public, private, protected used for in a class declaration? A method declaration? Variable declaration?
     These keywords decide what other classes this class is visible to. Public means all other classes can see this class.
