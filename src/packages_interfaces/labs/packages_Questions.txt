@@ -1,14 +1,22 @@
 Answer the following questions:
 
 1.) What is a package?
+     It's a group of related classes, interfaces, enumerations and annotations.
 
 2.) How to you import a package?
+    At the very top of a class, type the keyword package and then the package name.
 
 3.) What structure do packages mimic?
+    Folders
 
 4.) How do do you compile a .java file in a package "solo_package" from the command line?
+    javac src/solo_package/myJavaFile.java
+    Or you can be in the solo_package folder and run: javac myJavaFile.java
 
 5.) What if the above package is in a package "parent_package". Where do you need to be to
     compile a .java file in "solo_package" from the command line?
+    You need to be in parent_package/solo_package and then run: javac myJavaFile.java
 
 6.) What extra layer do packages add to access control?
+    Protected/default/private members aren't visible within different packages by non-subclasses. Private/default members
+    aren't visible within the different packages even by a subclass.

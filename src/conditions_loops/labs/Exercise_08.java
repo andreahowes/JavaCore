@@ -12,7 +12,7 @@ public class Exercise_08 {
         int x = 1000;
         do {
             System.out.println(x);
-            x=x-3;
+            x-=3;
         } while(x>=1);
 
     }

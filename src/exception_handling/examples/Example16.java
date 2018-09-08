@@ -11,3 +11,18 @@ class QueueFullException extends Exception {
                 size;
     }
 }
+
+
+class Example16 {
+
+    public static void main(String[] args) throws QueueFullException {
+        int myArray[] = new int[10];
+        for (int i=0; i<20; i++){
+            if (i>=myArray.length){
+                throw new QueueFullException(i);
+            }
+            else
+                {System.out.println(i);}
+        }
+    }
+}

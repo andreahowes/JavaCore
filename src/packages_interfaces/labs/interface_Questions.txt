@@ -1,16 +1,27 @@
 Answer the following questions:
 
 1.) What is an interface?
+    An interface is a group of methods, similar to a class, that have an empty body.
 
 2.) Why are interfaces implemented?
+    They enforce standards by forcing classes and objects that are created to implement that interface and have certain methods.
 
 3.) What is the implement keyword used for?
+    public class Class1 implements Interface1{}
+    The implement keyword is used to connect a class to an interface.
 
 4.) How many interfaces can class implement?
+    As many as you want.
 
 5.) Write a simple interface with one method.
 
+    public interface Park{
+        public void getFunding();
+    }
+
 6.) Think of a real world application where interfaces are used. Describe it's purpose.
+    A magazine company could have a membership interface that enforces that every class (onlineMembershipClass or inPersonMembershipClass)
+    must have a name for the member and a method by which to ask the user for money monthly.
 
 7.) What is wrong with the following interface?
 
@@ -18,4 +29,9 @@ Answer the following questions:
         int sum(int x, int y){
             return x + y;
         }
+    }
+
+    Methods in interfaces aren't supposed to have bodies. It should just have the method definition:
+    public interface IncorrectInterface{
+        sum(int x, int y);
     }

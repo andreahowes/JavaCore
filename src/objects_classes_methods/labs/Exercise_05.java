@@ -13,31 +13,45 @@ class Exercise_05{
 
     public static void main(String[] args) {
         //this sets the static String in class StaticExercise
-        StaticExercise.staticVar = "one";
+        StaticExercise.setStaticVar("one");
         //creates a new object in class StaticExercise
         StaticExercise object1 = new StaticExercise();
         //sets non-static variable for new object
-        object1.instanceVar = "two";
+        object1.setInstanceVar("two");
         //creates second new object in class StaticExercise
         StaticExercise object2 = new StaticExercise();
         //creates a new object in class StaticExercise
-        object2.instanceVar = "four";
+        object2.setInstanceVar("four");
         //sets non-static variable for second object
-        System.out.println(object1.instanceVar);
-        System.out.println(object2.instanceVar);
+        System.out.println(object1.getInstanceVar());
+        System.out.println(object2.getInstanceVar());
         System.out.println(object1.getStaticVar());
         System.out.println(object2.getStaticVar());
-        System.out.println(StaticExercise.staticVar);
+        System.out.println(StaticExercise.getStaticVar());
     }
 }
 
 class StaticExercise{
     //static variable
-    static String staticVar;
+    private static String staticVar;
     //non-static variable
-    String instanceVar;
+    private String instanceVar;
     //non-static method used for non-static variable with objects
-    public String getStaticVar(){
+
+
+    public static String getStaticVar() {
         return staticVar;
+    }
+
+    public static void setStaticVar(String staticVar) {
+        StaticExercise.staticVar = staticVar;
+    }
+
+    public String getInstanceVar() {
+        return instanceVar;
+    }
+
+    public void setInstanceVar(String instanceVar) {
+        this.instanceVar = instanceVar;
     }
 }

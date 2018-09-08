@@ -40,7 +40,7 @@ Answer the following questions:
 11.) What is an example of a time you would make an instance variable static? final?
     I would make an instance variable static if I decided I wanted the entire class to be able to refer to it instead of
     just a single object inside that class. I would use final when I don't want any method to be able to change its value.
-    An example of a final variable is pi in the Math class. 
+    An example of a final variable is pi in the Math class.
 
 12.) When a method returns a value, what needs to be done with that value?
     It needs to be assigned to a variable (of the matching type).

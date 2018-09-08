@@ -1,24 +1,44 @@
 Answer the following questions:
 
 1.) What is exception handling?
+    You tell the program what to do if a certain exception comes up. That way the program doesn't stop until you want it to (and the
+    output can be something more readable than just an error.
 
 2.) What is the exception hierarchy? What is the difference between the Exception class and the Error class?
+    Exception classes are organized into classes that are all inside the class Exception. It's not possible to recover from an error- you can
+    use a try/catch to catch an exception. Errors are generally caused by the environment an application is running in- exceptions are
+    caused by the actual application.
 
 3.) What is a try/catch?
+    It's where the program tries to do something but if a certain type of error comes up it can be 'caught' and something different can happen
+    (like outputting your own error message).
 
 4.) What exceptions have you come across thus far?
+    ArithmeticException
+    ArrayIndexOutOfBoundsException
+    Exception
 
 5.) How many catch statement can you have following a try?
+    As many as the number of exception types you can think of.
 
 6.) How many try statements can you have preceding a catch?
+    One
 
 7.) What does the finally statement do in a try/catch/finally block?
+    The finally statement is executed after the try/catch block no matter what the outcome of the try/catch is.
 
 8.) Can you nest exceptions? If so, when would you nest an exception?
+    Yes, you would nest an exception if you wanted the outer try block to catch something the inner try can't catch. The outer try can also
+    be used as a default option while the inner might be an attempt to handle an error more gracefully.
 
 9.) If you want to catch an ArrayIndexOutOfBounds exception and an Exception exception,
     which should you catch first? Why?
+    ArrayIndexOutOfBounds first because it is more specific.
 
 10.) How do you rethrow and exception? Why would you rethrow an exception?
+    To rethrow an exception: after the exception is thrown and caught, use the throw keyword to rethrow it.
+    This is used when you want to give an outer catch statement the chance to handle the exception.
 
 11.) What is the purpose of the throws keyword?
+    It is used for manually throwing an exception. Manually throwing an exception allows for a program to
+    generate an exception that can be handled in an organized manner.

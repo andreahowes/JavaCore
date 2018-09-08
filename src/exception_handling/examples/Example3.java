@@ -1,5 +1,7 @@
 package exception_handling.examples;
 
+import java.sql.SQLOutput;
+
 // Let JVM handle the error.
 class NotHandled {
     public static void main(String args[]) {
@@ -8,6 +10,12 @@ class NotHandled {
         System.out.println("Before exception is generated.");
 
         // generate an index out-of-bounds exception
-        nums[7] = 10;
+        try {
+            nums[7] = 10;
+            System.out.println("This isn't displayed- the program switches to the catch.");
+        }
+        catch (ArrayIndexOutOfBoundsException myException){
+            System.out.println("This array is out of bounds!");
+        }
     }
 }

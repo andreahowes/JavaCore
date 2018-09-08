@@ -1,5 +1,7 @@
 package packages_interfaces.labs;
 
+import packages_interfaces.labs.Coffee.ColdBrew;
+
 /**
  * Interfaces Exercise 1:
  *
@@ -17,4 +19,14 @@ package packages_interfaces.labs;
  *          playMusic() and turnOff().
  */
 
+//using a java file named Coffee.java
+//the classes and interface are in the Coffee package inside labs inside packages_interfaces (same location as this class)
 
+class InterfaceExercise_01{
+public static void main(String[] args){
+        //creating an object in class ColdBrew (extends PoutOverCoffee class which implements coffee interface)
+        ColdBrew myColdBrew=new ColdBrew();
+        //running an overridden method in ColdBrew class with object myColdBrew
+        myColdBrew.brewCoffee();
+        }
+}
