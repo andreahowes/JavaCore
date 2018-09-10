@@ -1,11 +1,26 @@
 Answer the following questions:
 
 1.) What is a thread and why do we use them?
+    It's the smallest unit of dispatchable code- this allows the same program to multitask as long as the tasks are on different threads.
 
 2.) What are the two ways to create a thread?
+    1) By extending the Thread class.
+    2) By implementing the Run interface.
 
 3.) How do you start a thread using the Runnable interface?
+    class thisThread implements Runnable{
+        public void run(){}
+    }
+        //the thread object with start() will be created in a different class
 
 4.) How do you start a thread using the Thread class?
+    class thisThread extends Thread{
+        public void run(){}
+    }
+        //the object also needs to be created and start()
 
 5.) How do you change a thread priority?
+    Use setPriority() method- it takes an int between 1 (low) and 10 (high) to set priority.
+    Thread.currentThread().setPriority(1);
+
+    OR usd built in static final variables: Thread.currentThread().setPriority(Thread.MIN_PRIORITY) etc.
