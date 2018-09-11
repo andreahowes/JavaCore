@@ -41,7 +41,7 @@ public class Exercise_03 implements Runnable {
     public Exercise_03(String threadName){
         myThread = new Thread(this, threadName);
         //start myThread
-        myThread.start();
+       // myThread.start();
     }
 
     //@override - the void run() method is called directly after the start() method
@@ -62,7 +62,7 @@ public class Exercise_03 implements Runnable {
             System.out.println(myThread.getName() + " has been interrupted!");
         }
         //then sout "terminating thread"
-        System.out.println(myThread.getName() + "has been terminated!");
+        System.out.println(myThread.getName() + " has been terminated!");
     }
 
 }
