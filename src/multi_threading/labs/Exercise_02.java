@@ -10,17 +10,19 @@ package multi_threading.labs;
 class Controller2{
     public static void main(String[] args) {
         //creating the objects
-        Exercise_02 firstThread = new Exercise_02("firstThread");
-        Exercise_02 secondThread = new Exercise_02("secondThread");
+        Exercise_02 firstThread = new Exercise_02();
+        Exercise_02 secondThread = new Exercise_02();
+        firstThread.start();
+        secondThread.start();
     }
 }
 
 //class that extends Thread class
 public class Exercise_02 extends Thread{
     //constructor for the class and use start()
-    Exercise_02(String name){
-        super(name);
-        start();
+    Exercise_02(){
+        //super(name);
+        //start();
     }
     //void run() which will be called automatically after the start()
     public void run(){

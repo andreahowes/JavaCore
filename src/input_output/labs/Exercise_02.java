@@ -32,12 +32,16 @@ public class Exercise_02  {
             String l;
             // If the line isn't null, the line of text is returned and written in the new file.
             while ((l = inputStream.readLine()) != null) {
+                //the lines below are what Ryan showed you and we can't get it to work.
+                //if (l.contains("a")){
+                   // l.replaceAll("a","-");
+                //}
                 //creating an array and reading through it while changing it.
                 char[] myArray = l.toCharArray();
                 for (int i = 0; i<myArray.length; i++){
                     //changing every a to -
                     if (myArray[i] == 'a'){
-                        myArray[i]='-';
+                        myArray[i]='b';
                     }
                     //changing every t to *
                     else if (myArray[i] == 'e'){
