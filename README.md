@@ -1,4 +1,4 @@
-# CodingNomads online_java_labs
+# JavaCore
 
 This project contains a variety of textbook examples and labs focused on Java fundamentals.
 
